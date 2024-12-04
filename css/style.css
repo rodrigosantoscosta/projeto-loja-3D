@@ -1,0 +1,204 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    color: #2D2D2D; /* Texto principal em cinza escuro */
+    font-family: Arial, sans-serif;
+    background-color: #F4F4F9; /* Fundo claro */
+}
+
+/* Barra de Navegação */
+.navbar {
+    position: fixed; 
+    top: 0; 
+    left: 0; 
+    right: 0; 
+    z-index: 1030; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+}
+
+.nav-item {
+    padding: 0px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 50px;
+}
+
+.navbar-brand, .nav-link {
+    color: #FFFFFF; /* Links em branco */
+    text-decoration: none;
+}
+
+.nav-link:hover {
+    color: #F87171; /* Vermelho coral para hover */
+}
+
+.nav-link.active {
+    color: #FBBF24; /* Amarelo destaque */
+}
+
+/* Botões */
+.btn {
+    background-color: #2563EB; /* Azul médio */
+    color: #FFFFFF; /* Texto branco */
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #1D4ED8; /* Azul mais escuro */
+}
+
+/* Container principal */
+.container {
+    background-color: #FFFFFF; /* Fundo branco */
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra mais evidente */
+}
+
+/* Links */
+a {
+    color: #2563EB; /* Azul médio */
+    text-decoration: none;
+}
+
+a:hover {
+    color: #F87171; /* Vermelho coral */
+}
+
+/* Subtítulos */
+.sub {
+    font-size: 1.2rem;
+    margin-top: 50px;
+    color: #374151; /* Cinza escuro */
+}
+
+/* Tela Inicial */
+.tela_inicial {
+    border-radius: 30px;
+    width: 50%;
+    margin: auto;
+    margin-top: 150px;
+    margin-bottom: 30px;
+    color: #1F2937; /* Cinza carvão */
+}
+
+/* Títulos */
+#titulo {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: 100px;
+    color: #1E3A8A; /* Azul escuro */
+}
+
+#sub_titulo {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    font-size: 1.2rem;
+    color: #4B5563; /* Cinza médio */
+}
+
+/* Imagem destacada */
+#imagem_gente {
+    margin-right: 4px;
+    height: 600px;
+    width: 800px;
+    border-radius: 6px;
+    float: right;
+    margin-bottom: 20px;
+}
+
+/* Descrição */
+#descricao_nossa_loja {
+    color: #6B7280; /* Cinza suave */
+    margin-right: 580px;
+    margin-top: 100px;
+    display: flex;
+}
+
+/* Seções */
+.div, .impressora_3d {
+    display: flex;
+    align-items: center;
+    background-color: #E5E7EB; /* Cinza claro */
+    font-size: 1.3rem;
+    margin-top: 100px;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* Impressoras */
+#impressora {
+    margin-right: 4px;
+    height: 400px;
+    width: 400px;
+    border-radius: 6px;
+}
+
+#descricao_impressora {
+    color: #374151; /* Cinza escuro */
+    margin-left: 50px;
+    text-align: center;
+}
+
+/* Cabeçalho */
+.cabeça {
+    font-size: 2rem;
+    margin-top: 160px;
+    color: #1F2937; /* Cinza carvão */
+}
+
+/* Produtos */
+#algum_de_nossos_produtos {
+    position: relative;
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    overflow: hidden;
+    height: auto;
+    margin-top: 20px;
+}
+
+/* Slides */
+.slides {
+    display: flex;
+    animation: slideAnimation 25s infinite;
+}
+
+.slides img {
+    width: 100%; 
+    max-width: 300px;
+    height: auto; 
+    border-radius: 10px;
+    object-fit: cover; 
+    transition: transform 0.3s ease; 
+}
+
+
+@keyframes slideAnimation {
+    0%, 20% { transform: translateX(0); }
+    25%, 45% { transform: translateX(-100%); }
+    50%, 70% { transform: translateX(-200%); }
+    75%, 95% { transform: translateX(-300%); }
+    100% { transform: translateX(0); }
+}
+
+/* Equipe */
+.nossa_equipe, .descricao_equipe {
+    margin-top: 60px;
+    font-size: 1.3rem;
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+    color: #374151; /* Cinza escuro */
+}
